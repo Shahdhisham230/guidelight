@@ -1,23 +1,53 @@
-# Guidelight 💙
+# Guidelight
 
 **Guidelight** is a family safety mobile application designed to help families monitor the safety and location of their loved ones.
 
 The system combines a Flutter mobile application, a Django REST API backend, and a YOLO-based computer vision module to detect potentially dangerous objects and send safety alerts to the connected family account.
 
-## ✨ Features
+## Features
 
-* 🔐 User registration and JWT authentication
-* 👨‍👩‍👧 Family member management
-* 📍 Family member location tracking
-* 🚨 Safety and danger alerts
-* 🤖 YOLO-based object detection
-* 📷 OpenCV camera processing
-* 🔗 REST API communication between the detection system, backend, and mobile app
-* 📊 Activity and safety status monitoring
-* 🛠️ Django Admin for managing application data
-* 🔑 Device authentication using a secure API key
+* User registration and JWT authentication
+* Family member management
+* Family member location tracking
+* Safety and danger alerts
+* YOLO-based object detection
+* OpenCV camera processing
+* REST API communication between the detection system, backend, and mobile app
+* Activity and safety status monitoring
+* Django Admin for managing application data
+* Device authentication using a secure API key
 
-## 🏗️ System Architecture
+## Screenshots
+
+### Login
+
+![Login Screen](assets/screenshots/IMG_3483.PNG)
+
+### Home
+
+![Home Screen](assets/screenshots/IMG_3484.PNG)
+
+### Alerts
+
+![Alerts Screen](assets/screenshots/IMG_3485.PNG)
+
+### Location
+
+![Location Screen](assets/screenshots/IMG_3486.PNG)
+
+### Family Tracking
+
+![Family Tracking Screen](assets/screenshots/IMG_3487.PNG)
+
+### Safety Status
+
+![Safety Status Screen](assets/screenshots/IMG_3489.PNG)
+
+### Application
+
+![Application Screen](assets/screenshots/IMG_3490.PNG)
+
+## System Architecture
 
 ```text
 ┌──────────────────────┐
@@ -45,7 +75,7 @@ The system combines a Flutter mobile application, a Django REST API backend, and
 └──────────────────────┘
 ```
 
-## 🧰 Technologies
+## Technologies
 
 ### Mobile Application
 
@@ -68,7 +98,7 @@ The system combines a Flutter mobile application, a Django REST API backend, and
 * YOLO
 * OpenCV
 
-## 🔄 How It Works
+## How It Works
 
 1. The computer vision module captures frames from a camera.
 2. YOLO detects objects in the scene.
@@ -78,7 +108,7 @@ The system combines a Flutter mobile application, a Django REST API backend, and
 6. Django stores the alert and associates it with the corresponding family account.
 7. The Flutter application retrieves the alert and displays it to the family user.
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 guidelight_family/
@@ -105,15 +135,18 @@ guidelight_family/
 ├── macos/                    # macOS platform
 ├── web/                      # Flutter Web
 │
+├── assets/
+│   └── screenshots/          # Application screenshots
+│
 ├── .env.example              # Environment variable template
 ├── .gitignore
 ├── pubspec.yaml
 └── README.md
 ```
 
-## ⚙️ Setup
+## Setup
 
-### 1. Clone the repository
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/Shahdhisham230/guidelight.git
@@ -181,7 +214,7 @@ The device API key should be configured through an environment variable.
 
 > **Security:** Never commit `.env`, Firebase service-account files, API keys, or other private credentials to GitHub.
 
-## 🔐 Security
+## Security
 
 Sensitive configuration files are excluded from the repository using `.gitignore`.
 
@@ -195,19 +228,19 @@ Never publish:
 * Database files containing private data
 * Private certificates or signing credentials
 
-## 🚧 Project Status
+## Project Status
 
 Guidelight is a functional project combining mobile development, backend development, and computer vision into one integrated system.
 
 The current implementation focuses on family safety monitoring, location tracking, object detection, and in-app safety alerts.
 
-## 👩‍💻 Developer
+## Developer
 
 **Shahd Hisham**
 
 GitHub:
-https://github.com/Shahdhisham230
+https://github.com/Shahdhisham230/guidelight
 
 ---
 
-⭐ If you find this project interesting, feel free to explore the repository.
+If you find this project interesting, feel free to explore the repository.
